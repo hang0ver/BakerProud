@@ -14,6 +14,84 @@ include 'includes/variables.php';
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		<style>
+.list {
+  font-family:sans-serif;
+}
+td {
+  padding:10px; 
+  border:solid 1px #eee;
+}
+
+input {
+  border:solid 1px #ccc;
+  border-radius: 5px;
+  padding:7px 14px;
+  margin-bottom:10px
+}
+input:focus {
+  outline:none;
+  border-color:#aaa;
+}
+.sort {
+  padding:8px 30px;
+  border-radius: 6px;
+  border:none;
+  display:inline-block;
+  color:#fff;
+  text-decoration: none;
+  background-color: #28a8e0;
+  height:30px;
+}
+.sort:hover {
+  text-decoration: none;
+  background-color:#1b8aba;
+}
+.sort:focus {
+  outline:none;
+}
+.sort:after {
+  display:inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
+}
+.sort.asc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:4px;
+  right:-5px;
+}
+.sort.desc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:-4px;
+  right:-5px;
+}
+			
+			.url{
+				
+				width: 1px;
+			}
+</style>
+		
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
@@ -39,10 +117,88 @@ include 'includes/nav.php';
 					<div id="main">
 						<div class="inner">
 							<h1>Student Links</h1>
-							<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel venenatis mauris vehicula hendrerit.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+							
+							
+
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							<div id="users">
+  <input class="search" data-sort="name" placeholder="Search" />
+
+  <table>
+    <!-- IMPORTANT, class="list" have to be at tbody -->
+    <tbody class="list">
+      <tr>
+				<td class="url"><a href="https://google.com" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a></td>
+        <td class="name">Unofficial Transcript</td>
+      </tr>
+      <tr>
+				<td class="url"><a href="https://google.com" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a></td>
+        <td class="name">Official Transcript</td>
+      </tr>
+      <tr>
+				<td class="url"><a href="https://google.com" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a></td>
+        <td class="name">Add or Drop Classes</td>
+      </tr>
+      <tr>
+				<td class="url"><a href="https://google.com" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a></td>
+        <td class="name">My Grades</td>
+      </tr>
+			
+			      <tr>
+				<td class="url"><a href="https://www.baker.edu/media/ckfinder/files/Baker-Catalog.pdf" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a></td>
+        <td class="name">Catalog</td>
+      </tr>
+			
+						      <tr>
+				<td class="url"><a href="https://www.baker.edu/media/ckfinder/files/Baker-Student-Handbook.pdf" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a></td>
+        <td class="name">Student Handbook</td>
+      </tr>
+			
+			<tr>
+				<td class="url"><a href="https://my.baker.edu/ICS/My_Services/Student_Services_Center/Academics_Services/Class_Schedule/View_Class_Schedule.jnz" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a></td>
+        <td class="name">View Class Schedule</td>
+      </tr>
+			
+						<tr>
+				<td class="url"><a href="https://my.baker.edu/ICS/My_Services/Student_Services_Center/Academics_Services/Course_Information/" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a></td>
+        <td class="name">Course Information</td>
+      </tr>
+			
+									<tr>
+				<td class="url"><a href="https://my.baker.edu/ICS/My_Services/Student_Services_Center/Academics_Services/Degree_Audit/" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a></td>
+        <td class="name">Degree Audit</td>
+      </tr>
+			
+												<tr>
+				<td class="url"><a href="https://my.baker.edu/ICS/My_Services/Student_Services_Center/Academics_Services/Grade_Information/Course_History/" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a></td>
+        <td class="name">Course History</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
 						</div>
 					</div>
 
@@ -57,6 +213,16 @@ include 'includes/footer.php';
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+						<script src="assets/js/list.min.js"></script>
+				
+						<script>
+var options = {
+  valueNames: [ 'name', 'born' ]
+};
+
+var userList = new List('users', options);
+							userList.sort('name', { order: 'asc' });
+						</script>
 
 	</body>
 </html>
